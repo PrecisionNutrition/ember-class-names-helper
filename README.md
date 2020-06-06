@@ -1,6 +1,6 @@
-# ember-class-names-helper
+# `{{class-names}}` helper
 
-`{{class-names}}` helper provides a cleaner way for conditionally joining class names, using a tiny library [classnames](https://github.com/JedWatson/classnames).
+Provides a cleaner way for conditionally joining class names in templates.
 
 Before:
 
@@ -42,6 +42,8 @@ Or with `{{cn}}` alias in a single line:
 ```
 ember install ember-class-names-helper
 ```
+
+The helper relies on a tiny and well-tested library [classnames](https://github.com/JedWatson/classnames).
 
 ## Usage
 
