@@ -3,10 +3,10 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Helper | class-names', function(hooks) {
+module('Integration | Helper | class-names', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('helper works', async function(assert) {
+  test('helper works', async function (assert) {
     this.fancy = false;
     this.primary = true;
     this.disabled = true;
@@ -26,7 +26,7 @@ module('Integration | Helper | class-names', function(hooks) {
     assert.equal(this.element.textContent, 'button bg-white rounded-lg p-6 button--primary');
   });
 
-  test('cn alias works', async function(assert) {
+  test('cn alias works', async function (assert) {
     this.primary = false;
     this.disabled = true;
 
