@@ -1,8 +1,18 @@
 # `{{class-names}}` helper
 
+<p>
+  <a href="https://github.com/PrecisionNutrition/ember-class-names-helper/actions?query=workflow%3ACI" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/PrecisionNutrition/ember-class-names-helper/workflows/CI/badge.svg" alt="CI status">
+  </a>
+
+  <a href="https://www.npmjs.com/package/ember-class-names-helper" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/npm/v/ember-class-names-helper?color=informational" alt="NPM version" />
+  </a>
+</p>
+
 Provides a cleaner way for conditionally joining class names in templates.
 
-Before:
+**Before:** 
 
 ```hbs
 <button class="button {{if @primary "button--primary"}} {{if @small "button--small"}} {{if @disabled "is-disabled"}}" type="button">
@@ -10,7 +20,7 @@ Before:
 </button>
 ```
 
-After:
+**After:**
 
 ```hbs
 <button
