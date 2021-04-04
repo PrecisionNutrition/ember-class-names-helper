@@ -1,6 +1,6 @@
 {
   "name": "ember-class-names-helper",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Template helper for conditionally joining class names.",
   "keywords": [
     "ember-addon"
