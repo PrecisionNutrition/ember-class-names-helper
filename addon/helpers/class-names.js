@@ -17,7 +17,26 @@ export default helper(
   function classNames(params, hash) {
     // Change NamedArgsProxy -> Javascript object for compatibility with classnames@2.3.x
     const entries = Object.entries(hash);
-    hash = Object.fromEntries(entries);
-    return classnames(...params, hash);
+    const obj = fromEntries(entries);
+
+    return classnames(...params, obj);
   }
 );
+
+/**
+ * Safe polyfill for Object.fromEntries
+ *
+ * @param {Array}
+ * @returns {Object}
+ */
+function fromEntries(entries) {
+  if (Object.fromEntries) {
+    return Object.fromEntries(entries);
+  } else {
+    // Support old iOS browsers
+    return entries.reduce(function (acc, [key, value]) {
+      acc[key] = value;
+      return acc;
+    }, {});
+  }
+}
