@@ -12,7 +12,7 @@
 
 Provides a cleaner way for conditionally joining class names in templates.
 
-**Before:** 
+**Before:**
 
 ```hbs
 <button class="button {{if @primary "button--primary"}} {{if @small "button--small"}} {{if @disabled "is-disabled"}}" type="button">
